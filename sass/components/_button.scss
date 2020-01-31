@@ -1,0 +1,95 @@
+
+  .btn
+  {
+
+    &,
+    &:link , 
+    &:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding:1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all .2s;
+  position: relative;
+  font-size: 1.7rem;
+  border:none;
+  cursor: pointer;
+  }
+}
+  .btn:hover{
+    transform:translateY(-4px);
+    box-shadow: 0px 10px 20px rgba($color-black, .2);  
+  }
+  .btn:active{
+  transform:translateY(-1px);
+  box-shadow: 0px 10px 10px rgba($color-black, .2);
+  }
+  .btn-wight{
+    background-color: $clor-Wight ;
+    color: $color-grawy;
+  }
+
+  .btn::after{
+  content: "";
+  position: absolute;
+  top:0px;
+  left: 0px;
+  display: inline-block;
+  height:100%;
+  width: 100%;
+  border-radius: 100px;
+  z-index: -1;
+  transition: all .4s;
+  }
+  
+  .btn-wight::after{
+  background:$clor-Wight;
+  }
+  .btn-green{
+    background-color: $color-primary ;
+    color: $clor-Wight;
+  }
+  .btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+  }
+
+  .btn-green::after{
+    background:$color-primary;
+
+    }
+    .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+    }
+  .btn-an{
+  animation: moveB .5s ease-out  .75s;
+  animation-fill-mode: backwards;
+  }
+  
+  .btn-text {
+    &:visited  ,
+     &:link {
+     // color: aqua;
+     color:$color-primary;
+      display: inline-block;
+      text-decoration: none;
+      border-bottom: 1px solid $color-primary;
+      padding-bottom:3px;
+      font-size: 1.7rem;
+      transition: all .2s;
+    }
+
+    &:hover{
+      color:$clor-Wight;
+      background-color: $color-primary;
+      box-shadow: 5px 10px 20px rgba( $color-black, $alpha: .2);
+      transform: translateY(-2px);
+    }
+    &:active{
+      box-shadow: 4px 5px 10px rgba( $color-black, $alpha: .2);
+      transform: translateY(0);
+
+    }
+  }

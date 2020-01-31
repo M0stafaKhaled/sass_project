@@ -1,0 +1,93 @@
+
+  .heading{
+  
+    color:$clor-Wight;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom:60px;
+    }
+    
+    .headings1{
+    display: block;
+    
+    font-size: 60px;
+    font-weight:700;
+    letter-spacing:30px; 
+    animation-name: move;
+    animation-duration: 3s;
+    
+    
+    }
+    
+    
+    /*:hover .headings1{
+    
+      animation-name: move;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      background-color: black;
+    }
+    */
+    
+    
+    .headings2{
+    
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 15.4px;
+    animation-name: moveRight;
+    animation-duration: 3s;
+    }
+    
+
+
+    .heading-secondary{
+
+
+
+      font-weight: 700;
+      font-size: 30px;
+      text-transform: uppercase;
+      background-image:linear-gradient( to right  ,$color-Light ,$color-dark);
+      display: inline-block; 
+      -webkit-background-clip: text;
+      color:transparent;
+      letter-spacing:2px;
+      translate: all 2s;
+
+
+
+
+
+      &:hover {
+
+
+
+        transform: skewY(2deg) skewX(15deg) scale(1.1) ;
+        text-shadow: 5px 10px 20px rgba($color-black, $alpha: .2)
+      }
+
+    }
+    
+    .heading-3{
+
+
+
+      font-size: 1.8rem;
+      font-weight: 600;
+
+
+    }
+    .paragraph{
+
+      font-size: 1.7rem;
+
+
+      &:not(:last-child){
+
+        margin-bottom:4%;
+
+
+      }
+    }

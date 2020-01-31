@@ -1,0 +1,16 @@
+{
+  "name": "pp",
+  "version": "1.0.0",
+  "description": "landing page",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "node-sass": "^4.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/index.css -w"
+  },
+  "author": "",
+  "license": "ISC"
+}

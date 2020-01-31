@@ -1,0 +1,68 @@
+.header{
+    height: 95vh;
+    background-image: linear-gradient( to right , rgba($color-Light,.8) ,
+    
+    rgba($color-dark,.8) )  , url('../high.jpg');
+    /*background-attachment: fixed;
+    */background-size:cover;
+    background-position: top;
+    clip-path: polygon(0 0 , 100% 0 , 100% 75vh , 0 100%);
+    position: relative;
+    background-attachment: fixed;
+    transition: all 3s;
+    }
+    .logo-b{
+      position: absolute;
+      top:40px;
+      left: 40px;
+    }
+    .logo{
+    
+      height: 50px;
+      border-radius: 50%;
+      opacity: .7;
+      animation-name: gg;
+     animation-duration: 4s;
+    }
+    
+    
+    
+    .logo:hover{
+    
+    opacity:1 ;
+  
+      
+    
+    }
+    
+    .up {
+    
+    position: absolute;
+    top:40%;
+    left: 50%;
+    
+    transform: translate(-50% ,-50%);
+    text-align: center;
+    
+    }
+    @keyframes gg 
+    {
+
+      0%{
+
+        opacity: 0;
+        transform: translateX(50px);
+
+      }
+      50%{
+
+        transform: translateX(-20px)
+      }
+      100%{
+
+        opacity: 1;
+        transform: translateX(0);
+
+      }
+
+    }

@@ -1,0 +1,216 @@
+.section-about{
+    background-color: $color-gery;
+    padding: 25rem 0 ;
+    margin-top: -20vh;
+}
+.section-features {
+    padding: 20rem 0;
+    background-image: linear-gradient( to right , rgba($color-dark,.8) ,
+    rgba($color-Light,.8) )  , url('/img/nat-4.jpg');
+    background-size:cover;
+    //background-attachment: fixed;
+    transform: skewY(-7deg);
+    margin-top: -10rem;
+    & > * {
+         transform: skewY(7deg);
+    }
+
+}
+.section-tours{
+    padding: 25rem 0 5rem 0;
+    background-color: $color-gery;
+    margin-top: -190px;
+}
+
+.section-stories{
+    padding: 12rem 0 5rem 0;
+    position: relative;
+}
+
+.section-book {
+    padding:18rem 0;
+    background-image:linear-gradient(to right bottom,$color-primary ,$color-dark);
+}
+.book {
+
+    background-image:linear-gradient(105deg , 
+                                rgba($clor-Wight,.9)0%, 
+                                rgba($clor-Wight,.9)50%, 
+                                transparent 50%),
+                                url(../img/nat-10.jpg);
+    background-size:cover;
+    box-shadow: 0 3rem 4rem rgba($color-black,.15);
+    border-radius: 3px;
+
+
+    height: 50rem;
+    &_form{
+
+        width: 50%;
+        padding: 6rem;
+    }
+}
+.bg-video{
+position: absolute;
+top: 0;
+left: 0;
+width:100%;
+height:100%;
+z-index: -1;
+opacity: .15;
+overflow: hidden;
+}
+
+video{
+
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+
+.card {
+    perspective: 150rem;
+    position: relative;
+    height: 50rem;
+   &_side{
+    height: 51rem;
+    transition: all .8s ease;
+    color:$clor-Wight;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($color-black,.15);
+    &--front {
+        background-color:$clor-Wight;
+        
+
+    }
+    &--back{
+        background-color: $color-primary;
+        transform: rotateY(180deg);
+        &--1{
+            background-image:linear-gradient(to right bottom ,$color-first,$color-first-light);
+        }
+        &--2{
+            background-image:linear-gradient(to right bottom ,$color-dark,$color-primary);
+        }
+        &--3{
+            background-image:linear-gradient(to right bottom ,$color-secende,$color-secende-light);
+        }
+    }
+   }
+    &:hover &_side--front{
+        transform: rotateY(-180deg);
+    }
+    &:hover &_side--back{
+       transform: rotateY(0);
+    }
+    
+ 
+&_p{
+
+    background-size: cover;
+    height:23rem;
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0 , 100% 85%, 0 100%);
+    
+    &-1{
+
+        background-image: linear-gradient(to right , $color-first ,$color-first-light ,) ,
+        url('../img/nat-5.jpg');
+    }
+
+    &-3{
+
+        background-image:linear-gradient(to right , $color-secende-light ,$color-secende,) ,
+        url('../img/nat-7.jpg');
+    }
+
+    &-2{
+
+        background-image:linear-gradient(to right , $color-dark ,$color-primary) ,
+        url('../img/nat-6.jpg');
+    }
+}
+&_h {
+    font-size: 2.5rem;
+    font-weight:400;
+    text-transform: uppercase;
+    color:$clor-Wight;
+    position: absolute;
+    top: 10rem;
+    right: 2rem;
+    text-align: right;
+    width: 75%;
+}
+&_h-span {
+    padding: 1rem 1.5rem;
+   -webkit-box-decoration-break: clone;
+    &_1{
+        background-image: linear-gradient(to right bottom, 
+        rgba($color-first ,.85) , 
+        rgba($color-first-light ,.85));
+    }
+    &_3{
+        background-image: linear-gradient(to right bottom, 
+        rgba($color-secende ,.85) , 
+        rgba($color-secende-light ,.85));
+    }
+    &_2{
+        background-image: linear-gradient(to right bottom, 
+        rgba($color-dark ,.85) , 
+        rgba($color-primary ,.85));
+    }
+}
+
+&_d {
+
+        color: rgb(99, 99, 99);
+        padding: 3rem;
+    ul{
+        list-style: none;
+        width: 80%;
+        margin: 0 auto;
+
+        li {
+
+            text-align: center;
+            font-size: 1.5rem;
+     &:not(:last-child){
+
+        border-bottom:1px solid #eee;
+     }
+        }
+    }
+}
+&_cta {
+    transition: all .5s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    width: 90%;
+    text-align: center;
+}
+&_price-box {
+    text-align: center;
+    margin-bottom: 8rem;
+    color:$clor-Wight;
+}  
+
+&__price-only
+{
+    font-size :1.4rem;
+    text-transform: uppercase;
+}
+&_price-valay{
+    font-size: 6rem;
+    font-weight: 200;
+}
+}

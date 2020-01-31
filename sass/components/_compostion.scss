@@ -1,0 +1,82 @@
+.com{
+
+position: relative;
+
+    &_p{
+
+        width:55%;
+        box-shadow: 3px 16px 40px rgba($color-black , $alpha: .4);
+        border-radius: 2px;
+        position: absolute;
+        z-index: 5;
+        transition: all .2s;
+
+        &--1{
+            left:0;
+            top:-2rem;
+            animation-name: bb ;
+           animation-delay: 1s;
+            animation-duration: 2s ;
+            
+
+        }
+        &--2{
+            right:0;
+            top:2rem;
+            animation-name: bb ;
+            animation-delay: 1s;
+             animation-duration: 6s ;
+          
+        
+
+        }
+        &--3{
+            left:20%;
+            animation-name: bb ;
+            animation-delay: 1s;
+             animation-duration: 4s ;
+             
+           
+
+        }
+
+        &:hover{
+
+            transform: scale(1.05);
+            box-shadow: 5px 20px 40px rgba($color-black , $alpha: .4);
+            z-index: 10;
+        }
+     
+    }
+   &:hover  &_p:not(:hover){
+
+        transform: scale(.85);
+
+   }
+ 
+
+}
+
+@keyframes bb {
+
+
+    0%{
+
+        opacity: 0;
+        transform: translate(20px);
+
+    }
+    50%{
+
+
+        transform: translate(-15px);
+    }
+
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+
+
+}
